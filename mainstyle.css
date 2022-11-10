@@ -407,6 +407,7 @@
             
             .image{
                 padding: 20em;
+                padding-top: 12em;
                 padding-left: 2em;
             }
             
@@ -442,6 +443,7 @@
                 z-index: -1;
                 margin-left: -10em;
                 margin-top: -10em;
+                margin-bottom: 0;
                 padding-top: 5em;
                 padding-left: 10em;
             }
@@ -455,6 +457,10 @@
                 margin-top: 3em;
                 font-weight: bolder;
                 margin-left: 0.7em;
+            }
+            
+            #skills-head{
+                margin-top: 0em;
             }
 
             .top{
@@ -628,8 +634,9 @@
             }
             
             .form-box-name{
-                margin: 0.3em;
+                width: 20em;
                 height: 3em;
+                margin: 0.3em;
                 border-radius: 0.3em;
                 padding-left: 1em;
                 border: transparent;
@@ -637,6 +644,7 @@
             
             .form-box-email{
                 margin: 0.3em;
+                width: 20em;
                 height: 3em;
                 border-radius: 0.3em;
                 padding-left: 1em;
@@ -648,7 +656,8 @@
                 border-radius: 0.3em;
                 padding-left: 1em;
                 padding-top: 0.5em;
-                height: 8em;
+                height: 12em;
+                width: 20em;
                 border: transparent;
             }
             
