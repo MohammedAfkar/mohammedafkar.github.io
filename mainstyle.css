@@ -28,6 +28,8 @@ body
 /* navigation bar */
 .navbg{
     background-color: #fafbff;
+    width: 100vw;
+    height: 3.5em;
 }
 
 .nav-item{
@@ -144,9 +146,6 @@ body
     justify-content: center;
     margin-top: 3em;
     font-weight: bolder;
-    background: linear-gradient(to top left, #066180 30%, #118AB2);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
     margin-left: 0.7em;
 }
 
@@ -375,6 +374,7 @@ body
             .navbg{
                 background-color: #fafbff;
                 width: 100vw;
+                height: 3.5em;
             }
             
             .nav-item{
@@ -442,6 +442,7 @@ body
                 z-index: -1;
                 margin-left: -9em;
                 margin-top: -10em;
+                padding-top: 4em;
             }
             
             /* skills */
