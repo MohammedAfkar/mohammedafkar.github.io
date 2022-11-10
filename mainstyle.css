@@ -19,6 +19,7 @@
 body
 {
     background-color: #eff2ff; 
+    width: 100vw;
 }
 
 .row{
