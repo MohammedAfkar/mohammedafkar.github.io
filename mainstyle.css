@@ -409,6 +409,7 @@
                 padding: 20em;
                 padding-top: 12em;
                 padding-left: 2em;
+                margin-top: -2em;
             }
             
             .intro-img{
@@ -472,6 +473,7 @@
             #skills{
                 display: flex;
                 justify-content: center;
+                margin-top: -20em;
             }
             
             .skill-card{
@@ -634,7 +636,7 @@
             }
             
             .form-box-name{
-                width: 20em;
+                width: 76vw;
                 height: 3em;
                 margin: 0.3em;
                 border-radius: 0.3em;
@@ -644,7 +646,7 @@
             
             .form-box-email{
                 margin: 0.3em;
-                width: 20em;
+                width: 76vw;
                 height: 3em;
                 border-radius: 0.3em;
                 padding-left: 1em;
@@ -657,7 +659,7 @@
                 padding-left: 1em;
                 padding-top: 0.5em;
                 height: 12em;
-                width: 20em;
+                width: 76vw;
                 border: transparent;
             }
             
