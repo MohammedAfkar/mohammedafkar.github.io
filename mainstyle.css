@@ -393,13 +393,12 @@ body
             /* intro (name, designation, image, contacts) */
             #intro-section{
                 padding-top: 5em;
-                width: 90vh;
             }
             
             .intro{
                 padding: 3em;
                 padding-left: 3em;
-                padding-bottom: 1em;
+                padding-bottom: 5em;
             }
 
             .Designation{
@@ -407,7 +406,7 @@ body
             }
             
             .image{
-                padding: 2em;
+                padding: 20em;
                 padding-left: 2em;
             }
             
@@ -439,11 +438,12 @@ body
             }
 
             .fizzy{
-                width: 42em;
+                width: 32em;
                 z-index: -1;
-                margin-left: -9em;
+                margin-left: -10em;
                 margin-top: -10em;
-                padding-top: 4em;
+                padding-top: 5em;
+                padding-left: 10em;
             }
             
             /* skills */
@@ -506,7 +506,7 @@ body
                 width: 20em;
                 background-color: #fafbff;
                 border-radius: 0.6em;
-                margin-left: 2em;
+                margin-left: 3em;
                 margin-top: 2em;
             }
             
