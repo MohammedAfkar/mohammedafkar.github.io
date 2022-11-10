@@ -85,8 +85,15 @@ body
     padding-top: 6em;
 }
 
+.fizzy{
+    width: 42em;
+    z-index: -1;
+    margin-left: -9em;
+    margin-top: -10em;
+}
 .intro-img{
     width: 22em;
+    margin-top: -40em;
 }
 
 .text-1{
@@ -183,7 +190,7 @@ body
 /* projects */
 
 .project-section{
-    width: 95vw;
+    width: 100vw;
     display: flex;
     justify-content: center;
 }
@@ -376,7 +383,6 @@ body
             .navtabs{
                 list-style-type: none;
                 width: 100%;
-                margin-left: -14em;
                 margin-top: 1em;
                 display: flex;
                 justify-content: center;
