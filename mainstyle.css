@@ -16,11 +16,11 @@
  lightdark for text: #343434
  */
 
-body
-{
-    background-color: #eff2ff; 
-    width: 100vw;
-}
+ body
+ {
+     background-color: #eff2ff; 
+     min-height: 100%;
+ }
 
 .row{
     margin-left: 0.8;
@@ -564,14 +564,17 @@ body
                 width: 10em;
                 height: 2em;
                 margin-left: 2em;
+                margin-top: 0.5em;
             }
             
             .source-code{
                 font-size:medium;
-                margin: 1.1em;
+                margin: 1em;
+                margin-left: 0.3em;
                 width: 10em;
                 height: 2em;
                 font-size: small;
+                color: #343434;
             }
             
             /* contact form */
@@ -595,16 +598,16 @@ body
             }
             
             .contact-mail, .contact-phn{
-                width: 25em;
+                width: 24em;
                 height: 4em;
                 border-radius: 5px;
                 background-color: #ffffff;
                 margin-top: 1em;
-                margin-left: 0.2em;
+                margin-left: 0.7em;
             }
             
             .apps{
-                margin-left: 3em;
+                margin-left: 1.5em;
                 margin-top: 0.3em;
             }
             
@@ -613,14 +616,14 @@ body
                 height: 5em;
                 background-color: #ffffff;
                 float: left;
-                margin: 0.8em;
+                margin: 0.3em;
                 border-radius: 0.3em;
             }
             
             .contact-form-sec{
-                width: 45%;
+                width: 45vw;
                 margin-top: 2em;
-                margin-left:3em ;
+                margin-left:2.4em ;
                 color: #000;
             }
             
@@ -641,7 +644,7 @@ body
             }
             
             #message{
-                margin: 0.3em;
+                margin: 0.2em;
                 border-radius: 0.3em;
                 padding-left: 1em;
                 padding-top: 0.5em;
