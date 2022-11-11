@@ -13,8 +13,8 @@
     <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
     <!-- nav bar-->
@@ -40,7 +40,10 @@
       <h1 class="Name">Mohammed Afkar</h1>
       <h3 class="Designation">Front-End Developer</h3>
     <div class="contact-info">
-      <button class="contact-button">Contact me</button>
+      <a href="#contactme"><button class="button-contact">
+        contact me
+        <span></span>
+      </button></a>
       <div class="social-media">
         <a href="https://www.instagram.com/ab_afkar_/"><iconify-icon icon="ant-design:instagram-filled" height="35" width="41" class="icon-home"></iconify-icon></a>
         <a href="https://www.linkedin.com/in/mohammed-afkar-4071491b1"><iconify-icon icon="akar-icons:linkedin-box-fill" height="35" width="30" class="icon-home"></iconify-icon></a>
@@ -93,6 +96,12 @@
         <h2 class="skill-name">Git-Version Control</h2>
         </div>
       </div> 
+      <div class="skill-card col-sm-2">
+        <div>
+        <iconify-icon class="icon-img" icon="logos:figma" height="55" style="color: #343434;"></iconify-icon>
+        <h2 class="skill-name">Figma</h2>
+        </div>
+      </div>
 </section>
     <!--projects-->
 <section class="row container-fluid project-section">
@@ -145,7 +154,7 @@
 </section>
     <!--contact-->
 <footer class="row container-fluid">
-  <h2 class="headings">Contact Me</h2>
+  <h2 class="headings" id="contactme">Contact Me</h2>
 
   <div class="contact-sec">
 
@@ -182,15 +191,34 @@
     </div>
     <!-- message form-->
     <div class="contact-form-sec">
-      <form action="">
-        <input type="text" class="form-box-name" placeholder="Name"><br>
-        <input type="email" class="form-box-email" placeholder="Email ID"><br>
-        <textarea id="message" rows="4" placeholder="Message"></textarea>
+      <form id="submit-form" action="" onclick="submit_form();">
+        <input type="text" name="name" class="form-box-name" placeholder="Name" required><br>
+        <input type="email" name="email" class="form-box-email" placeholder="Email ID" required><br>
+        <textarea id="message" name="message" rows="4" placeholder="Message"></textarea>
         <button type="submit" class="form-submit">Send message</button>
       </form>
     </div>
     <h3 class="logo-text" style="font-family:poppins; margin-top: 2em;">Thanks for scrolling</h3>
     <div class="logo-text">Afkar Abi.</div>
 </footer>
+<script>
+  $("#submit-form").submit((e)=>{
+      e.preventDefault()
+      $.ajax({
+          url:"https://formsubmit.co/bc142d33d1171999c74ca027d55da275",
+          data:$("#submit-form").serialize(),
+          method:"post",
+          success:function (response){
+              alert("Message send successfully")
+              window.location.reload()
+              $("#submit-form").trigger('reset');
+              //window.location.href="https://google.com"
+          },
+          error:function (err){
+              alert("Something Error")
+          }
+      })
+  })
+</script>
 </body>
 </html>
