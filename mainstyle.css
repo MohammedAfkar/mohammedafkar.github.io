@@ -280,27 +280,26 @@ width: 28em;
 }
 
 .icon-info{
-    margin-left:2em;
+    margin-left:1em;
     padding-top: 1.2em;
     float: left;
 }
 
 .info-text{
     padding: 1.2em;
-    margin-left: 4em;
+    margin-left: 3em;
 }
 
 .contact-mail, .contact-phn{
-    width: 25em;
+    width: 22em;
     height: 4em;
     border-radius: 5px;
     background-color: #ffffff;
     margin-top: 1em;
-
 }
 
 .apps{
-
+ margin: 1em;
 }
 
 .app-links{
@@ -378,5 +377,16 @@ width: 28em;
 @media screen and (min-width: 1300px){
     .image{
         padding-left: 10em;
+        }
+}
+
+/* phone screen */
+@media screen and (max-width: 500px){
+
+    .intro-img{
+        width: 22em;
+    }
+    .intro{
+        padding: 2em;
         }
 }
