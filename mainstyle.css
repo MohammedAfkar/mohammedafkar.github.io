@@ -75,16 +75,13 @@
 }
 
 .intro{
-    padding: 10em;
-    padding-right: 0;
+    padding-top: 10em;
 }
 
-.image{
-margin-top: 5em;
-}
 
 .intro-img{
 width: 28em;
+padding-top: 6em;
 }
 
 .text-1{
@@ -364,29 +361,4 @@ width: 28em;
     justify-content: center;
     font-size: x-large;
     font-weight: bolder;
-}
-
-/* big screen */
-@media screen and (min-width: 1700px){
-    .image{
-        padding-left: 25em;
-        }
-}
-
-/* phone screen */
-@media screen and (min-width: 1300px){
-    .image{
-        padding-left: 10em;
-        }
-}
-
-/* phone screen */
-@media screen and (max-width: 500px){
-
-    .intro-img{
-        width: 22em;
-    }
-    .intro{
-        padding: 2em;
-        }
 }
